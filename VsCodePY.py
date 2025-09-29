@@ -1,10 +1,10 @@
 from openpyxl import load_workbook
-filename = '幼儿批量注册导入模板.xlsx'
+filename = '区县代码处理中间表.xlsx'
 wb = load_workbook(filename)
 
 print(f"{filename}里面的工作表是{wb.sheetnames}")
 
-ws = wb['导入幼儿']
+ws = wb['Sheet3']
 ws.sheet_properties.tabColor = '808080'
 
 # 读取第二行作为列名
